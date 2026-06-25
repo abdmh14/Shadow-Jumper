@@ -1,0 +1,70 @@
+<html>
+<body>
+    <link rel="icon" type="image/x-icon" href="Player.png">
+    <link rel="shortcut icon" type="image/x-icon" href="Player.png">
+
+<div id="background"></div>
+
+
+<button onclick="downaload()"></button>
+<div id="engine"></div>
+<h1>Shadow Jumper Early test build</h1>
+
+
+<style>
+h1 {
+position: absolute;
+left: 430px;
+color: white;
+}
+body {
+background:  Black;
+}
+button {
+width: 200px;
+height: 50px;
+background-image: url("Btn.png");
+background-size: contain;
+background-repeat: no-repeat; 
+position: absolute;
+left: 550px;
+top: 100px;
+background-color: transparent;
+border: none;
+}
+#engine {
+width: 50px;
+height: 50px;
+background-image: url("game maker.png");
+background-size: contain;
+background-repeat: no-repeat; 
+position: absolute;
+left: 1200px;
+top: 570px;
+}
+#background {
+width: 99%;
+height: 1px;
+background: white;
+position: absolute;
+left: 10px;
+top: 550px;
+}
+</style>
+<a href="https://abdmh14.itch.io/" class="abdmh14" id="download-btn">
+itch.io abdmh14
+</a>
+<script>
+function downaload() {
+    
+    var link = document.createElement('a');
+    link.href = 'Shadow Jumper.exe';
+    link.download = 'Shadow Jumper.exe';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
+</body>
+</html>

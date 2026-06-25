@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexForge Studio</title>
+    <style>
+        body {
+            background: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* يمنع ظهور أشرطة التمرير */
+        }
+        #studio {
+            width: 600px;
+            height: 600px;
+            background-image: url("studio.png");
+            background-size: contain;
+            background-repeat: no-repeat; 
+            position: absolute;
+            /* توسيط الشعار بدقة في منتصف شاشة الكمبيوتر */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); 
+        }
+    </style>
+</head>
+<body>
+
+<div id="studio"></div>
+
+<script>
+    // ينتظر 3 ثواني (3000 مللي ثانية) ثم ينتقل تلقائياً لصفحة الموقع index.html
+    setTimeout(() => {
+        window.location.href = 'index.html'; 
+    }, 3000);
+</script>
+
+</body>
+</html>
+
